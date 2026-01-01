@@ -1,0 +1,93 @@
+/* Duplicate declarations example - shows repetition anti-patterns */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333333;
+  color: white;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Repeated color values */
+.text-primary {
+  color: #007bff;
+}
+
+.link-primary {
+  color: #007bff;
+}
+
+.border-primary {
+  border-color: #007bff;
+}
+
+.bg-primary-text {
+  color: #007bff;
+}
+
+/* Repeated spacing values */
+.section-1 {
+  margin-bottom: 24px;
+}
+
+.section-2 {
+  margin-bottom: 24px;
+}
+
+.section-3 {
+  margin-bottom: 24px;
+}
+
+.section-4 {
+  margin-bottom: 24px;
+}
+
+.section-5 {
+  margin-bottom: 24px;
+}
+
+/* Repeated layout patterns */
+.flex-center-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

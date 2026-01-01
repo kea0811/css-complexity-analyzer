@@ -1,0 +1,83 @@
+/* Specificity war example - demonstrates common anti-patterns */
+
+/* Using IDs - increases specificity unnecessarily */
+#header {
+  background: #333;
+  padding: 20px;
+}
+
+#header .logo {
+  font-size: 24px;
+}
+
+#header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Deep nesting - creates fragile selectors */
+.page-wrapper .main-content .article .article-body .paragraph .text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.page-wrapper .main-content .article .article-body .paragraph .text strong {
+  font-weight: bold;
+}
+
+/* !important abuse - sign of specificity war */
+.button {
+  background: blue !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px !important;
+}
+
+.button.primary {
+  background: green !important;
+}
+
+.button.secondary {
+  background: gray !important;
+}
+
+#sidebar .widget .button {
+  background: red !important;
+  width: 100% !important;
+}
+
+/* Multiple ID selectors - very high specificity */
+#main #content #article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Overqualified selectors */
+div.container {
+  max-width: 1200px;
+}
+
+a.link.external[target="_blank"] {
+  color: blue;
+}
+
+/* Competing specificity */
+.nav .item {
+  color: black;
+}
+
+#nav .item {
+  color: blue;
+}
+
+#nav #item {
+  color: red;
+}
+
+.nav .item.active {
+  color: green;
+}

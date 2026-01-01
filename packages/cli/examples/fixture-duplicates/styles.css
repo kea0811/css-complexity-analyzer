@@ -1,0 +1,94 @@
+/* Duplicate declarations example */
+
+/* Repeated display: flex pattern */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Repeated margin: 0 auto pattern */
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Repeated text styling */
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Repeated button reset */
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.link-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}

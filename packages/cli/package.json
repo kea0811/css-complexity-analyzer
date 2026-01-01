@@ -1,0 +1,56 @@
+{
+  "name": "css-complexity-analyzer",
+  "version": "0.1.2",
+  "description": "Analyze CSS complexity - profile cascade, specificity, fragility, and layout risk",
+  "type": "module",
+  "bin": {
+    "css-complexity-analyzer": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/cli.ts src/index.ts --format esm --dts --clean",
+    "dev": "tsup src/cli.ts src/index.ts --format esm --dts --watch",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist coverage"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "glob": "^11.0.0",
+    "picocolors": "^1.0.0",
+    "postcss": "^8.4.32",
+    "postcss-selector-parser": "^6.0.15"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "keywords": ["css", "complexity", "specificity", "cascade", "cli", "linter", "analyzer", "profiler"],
+  "author": "kea0811",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kea0811/css-complexity-analyzer.git"
+  },
+  "homepage": "https://github.com/kea0811/css-complexity-analyzer#readme",
+  "bugs": {
+    "url": "https://github.com/kea0811/css-complexity-analyzer/issues"
+  },
+  "license": "MIT"
+}

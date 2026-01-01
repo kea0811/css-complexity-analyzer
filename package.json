@@ -1,0 +1,32 @@
+{
+  "name": "css-complexity-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "description": "CSS Complexity Profiler - Analyze CSS cascade/specificity/fragility/layout risk",
+  "keywords": ["css", "complexity", "specificity", "cascade", "linter", "profiler"],
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "test:coverage": "pnpm -r test:coverage",
+    "lint": "eslint packages --ext .ts",
+    "lint:fix": "eslint packages --ext .ts --fix",
+    "format": "prettier --write \"packages/**/*.ts\"",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r clean"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "eslint": "^8.55.0",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,60 @@
+/* Specificity war example - high complexity */
+
+/* ID selectors - high specificity */
+#header #nav #menu .menu-item a {
+  color: blue;
+}
+
+#sidebar #widget-area .widget .widget-title {
+  font-size: 14px;
+}
+
+/* Deep nesting - excessive depth */
+.page .content .article .section .paragraph .text span {
+  line-height: 1.5;
+}
+
+body div.wrapper main article section p span.highlight {
+  background: yellow;
+}
+
+/* !important abuse */
+.button {
+  background: red !important;
+  color: white !important;
+  padding: 10px !important;
+  margin: 5px !important;
+  border: none !important;
+  display: inline-block !important;
+}
+
+.nav-link {
+  color: blue !important;
+  text-decoration: none !important;
+}
+
+/* Multiple ID selectors */
+#app #main #content {
+  padding: 20px;
+}
+
+#header #logo #brand-text {
+  font-weight: bold;
+}
+
+/* Complex attribute selectors with IDs */
+#form input[type="text"][name="email"].required {
+  border: 2px solid red;
+}
+
+/* Override pressure - same property defined many times */
+.btn { color: blue; }
+.btn-primary { color: white; }
+.btn-secondary { color: gray; }
+.btn-success { color: green; }
+.btn-danger { color: red; }
+.btn-warning { color: orange; }
+.btn-info { color: cyan; }
+.btn-light { color: black; }
+.btn-dark { color: white; }
+.btn-link { color: blue; }
